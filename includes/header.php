@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="./icons/suitcase.svg" />
     <link href="https://fonts.googleapis.com/css?family=Pattaya|Poppins:400,500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Atlas | Travel Agency</title>
 </head>
