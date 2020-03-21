@@ -256,6 +256,18 @@ input[type="email"]:focus {
   box-shadow: 0 0 8px 0 dodgerblue;
 }
 
+.error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  font-size: 14px;
+}
+
 footer {
   color: white;
   background: rgba(19, 28, 39, 1);

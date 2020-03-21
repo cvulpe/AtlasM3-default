@@ -42,23 +42,31 @@
         </div>
     </div>
 </section>
-
+<?php
+    require('includes/validation.php');
+?>
 <section id="contact">
     <div class="form-wrapper">
         <header class="form-head">
             <h2>Contact US</h2>
         </header>
-        <form>
+        <form action="<?= $_SERVER['PHP_SELF'] ;?>" method="POST">
             <div class="name-form">
-                <input type="text" name="name" placeholder="Enter your name:" required>
+                <input type="text" name="name" placeholder="Enter your name:" value="<?= $name ?>"><br>
+                <span class="error"><?= $name_error;?></span>
             </div>
             <div class="email-form">
-                <input type="email" name="email" placeholder="Enter your email:" required>
+                <input type="text" name="email" placeholder="Enter your email:" value="<?= $email?>"><br>
+                <span class="error"><?= $email_error;?></span>
             </div>
             <div class="message-form">
-                <textarea placeholder="Enter your message:" class="msg" name="message" cols="20" rows="4"></textarea>
+                <textarea type="text value=" <?= $message ?>" name="message" placeholder="Enter your message:" "
+                    class=" msg" cols="20" rows="4"></textarea>
             </div>
             <button type="submit" class="submit book">Submit</button>
+            <div class="success">
+                <? echo $success;?>
+            </div>
         </form>
     </div>
 </section>
